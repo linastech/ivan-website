@@ -1,0 +1,50 @@
+@font-face {
+  font-family: terminus;
+  src: url(../fonts/TerminusTTF-4.39.ttf);
+}
+html, body{
+  height: 100%;
+}
+body{
+  background: #0D131A;
+  font-family: 'terminus', sans-serif;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  color: #0a6537;
+}
+h1{
+  text-align: center;
+  padding: 10vh 0 25vh;
+}
+.slav{
+  margin: auto;
+  display: block;
+}
+.linkWrapper{
+  text-align: center;
+}
+.link{
+  font-size: 0.8em;
+  color: #0b496f;
+  text-decoration: none;
+  padding-top: 3vh;
+  position: relative;
+}
+.link:hover{
+  color: #0e6296;
+  transition: all 300ms ease-in-out;
+}
+.link:hover::after{
+  width: 100%;
+  background-color: #0e6296;
+}
+.link::after{
+  content: '';
+  left: 0;
+  position: absolute;
+  bottom: -1px;
+  height: 2px;
+  background-color: #0b496f;
+  width: 0;
+  transition: all 300ms ease-in-out;
+}
